@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Signwithapple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="M9W-Nh-B1U" kind="show" identifier="segue" id="1zd-mu-FsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="137"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Df4-dO-8wM">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="M9W-Nh-B1U" customClass="MainViewController" customModule="Signwithapple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rv2-7D-kHv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEr-ek-lfL">
+                                <rect key="frame" x="15" y="151" width="384" height="372"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="372" id="NRC-55-hmN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zjU-sX-irG" firstAttribute="bottom" secondItem="LEr-ek-lfL" secondAttribute="bottom" constant="339" id="3Bl-s7-sbF"/>
+                            <constraint firstItem="LEr-ek-lfL" firstAttribute="top" secondItem="zjU-sX-irG" secondAttribute="top" constant="107" id="gLT-rx-KDc"/>
+                            <constraint firstItem="LEr-ek-lfL" firstAttribute="leading" secondItem="zjU-sX-irG" secondAttribute="leading" constant="15" id="lu0-h7-y5H"/>
+                            <constraint firstItem="zjU-sX-irG" firstAttribute="trailing" secondItem="LEr-ek-lfL" secondAttribute="trailing" constant="15" id="y6G-of-7qQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zjU-sX-irG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T7v-Rw-cOH"/>
+                    <connections>
+                        <outlet property="detailsLabel" destination="LEr-ek-lfL" id="0Wa-bd-69b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOe-UO-kAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756.52173913043487" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+</document>
